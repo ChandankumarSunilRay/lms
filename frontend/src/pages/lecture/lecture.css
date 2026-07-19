@@ -1,0 +1,157 @@
+.progress {
+  max-width: 100%;
+  width: calc(100% - 32px);
+  background-color: #1e293b;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin: 12px auto;
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+.progress progress {
+  width: 100%;
+  max-width: 280px;
+  margin-top: 8px;
+  height: 8px;
+}
+
+.lecture-page {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 16px 24px;
+  flex: 1;
+}
+
+.left {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 0;
+}
+
+.left video {
+  border-radius: 10px;
+  background: #000;
+}
+
+.left h1 {
+  font-size: 1.3rem;
+  margin: 12px 0 6px;
+  color: #1e293b;
+  word-break: break-word;
+}
+
+.left h3 {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.right {
+  width: 320px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.lecture-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.lecture-form h2 {
+  font-size: 1.1rem;
+  color: #8a4baf;
+  margin: 0 0 12px;
+}
+
+.lecture-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lecture-form input[type="text"],
+.lecture-form input[type="file"] {
+  padding: 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.lecture-number {
+  background-color: #fff;
+  padding: 12px 14px;
+  border: 1px solid #e2e8f0;
+  margin-top: 8px;
+  border-radius: 8px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+
+.lecture-number:hover,
+.lecture-number.active {
+  background-color: #8a4baf;
+  color: white;
+  border-color: #8a4baf;
+}
+
+.tick {
+  float: right;
+  background: #22c55e;
+  padding: 2px 4px;
+  border-radius: 4px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.delete-btn {
+  background: #ef4444 !important;
+  margin-top: 6px;
+  font-size: 0.85rem !important;
+  padding: 8px 12px !important;
+}
+
+@media (max-width: 900px) {
+  .lecture-page {
+    flex-direction: column;
+    padding: 0 12px 20px;
+  }
+
+  .right {
+    width: 100%;
+    order: -1;
+  }
+
+  .left h1 {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .progress {
+    font-size: 0.82rem;
+    padding: 10px 12px;
+  }
+
+  .lecture-form {
+    padding: 16px;
+  }
+}

@@ -1,0 +1,79 @@
+.student-dashboard {
+  padding: 40px 20px;
+  flex: 1;
+  background-color: #f4f6fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.dashboard-header {
+  max-width: 1080px;
+  width: 100%;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.dashboard-header h1 {
+  font-size: 2.2rem;
+  color: #4a3aff;
+  margin-bottom: 10px;
+}
+
+.dashboard-header p {
+  font-size: 1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.dashboard-section {
+  max-width: 1080px;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+  color: #222;
+  text-align: left;
+}
+
+.dashboard-courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.no-courses-msg {
+  font-size: 1.1rem;
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 640px) {
+  .student-dashboard {
+    padding: 24px 12px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .dashboard-header p {
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  .dashboard-courses-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
