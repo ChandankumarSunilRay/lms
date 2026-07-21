@@ -16,9 +16,15 @@
 }
 
 .course-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  align-items: stretch;
+}
+
+.course-container > .course-card {
+  flex: 1 1 260px;
+  min-width: 0;
 }
 
 .no-courses {
@@ -36,7 +42,7 @@
     font-size: 1.35rem;
   }
 
-  .course-container {
-    grid-template-columns: 1fr;
+  .course-container > .course-card {
+    flex-basis: 100%;
   }
 }
